@@ -4,6 +4,8 @@ const fs = require('fs');
 
 const app = express();
 
+const PORT = process.env.PORT || 5000;
+
 /////////
 // HBS //
 /////////
@@ -38,9 +40,9 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use((req, res, next) => {
-  res.render('maintenance.hbs');
-});
+// app.use((req, res, next) => {
+//   res.render('maintenance.hbs');
+// });
 
 app.use(express.static(__dirname + '/public'));
 
@@ -64,6 +66,12 @@ app.get('/about', (req, res) => {
   });
 });
 
-app.listen(5000, () => {
-  console.log('Listening on port 5000');
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects page'
+  })
+});
+
+app.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}`);
 });
