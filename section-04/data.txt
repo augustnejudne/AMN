@@ -1,0 +1,76 @@
+{
+  "statusCode": 200,
+  "body": {
+    "coord": {
+      "lon": 123.89,
+      "lat": 10.31
+    },
+    "weather": [
+      {
+        "id": 803,
+        "main": "Clouds",
+        "description": "broken clouds",
+        "icon": "04d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 302.15,
+      "pressure": 1010,
+      "humidity": 74,
+      "temp_min": 302.15,
+      "temp_max": 302.15
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 3.6,
+      "deg": 40
+    },
+    "clouds": {
+      "all": 75
+    },
+    "dt": 1544857200,
+    "sys": {
+      "type": 1,
+      "id": 8187,
+      "message": 0.0044,
+      "country": "PH",
+      "sunrise": 1544824421,
+      "sunset": 1544865924
+    },
+    "id": 1717512,
+    "name": "Cebu City",
+    "cod": 200
+  },
+  "headers": {
+    "server": "openresty",
+    "date": "Sat, 15 Dec 2018 08:18:06 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "452",
+    "connection": "close",
+    "x-cache-key": "/data/2.5/weather?APPID=af5907d053ba8eeaee183812ba607a11&q=cebu%20city,ph",
+    "access-control-allow-origin": "*",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-methods": "GET, POST"
+  },
+  "request": {
+    "uri": {
+      "protocol": "http:",
+      "slashes": true,
+      "auth": null,
+      "host": "api.openweathermap.org",
+      "port": 80,
+      "hostname": "api.openweathermap.org",
+      "hash": null,
+      "search": "?q=cebu%20city,ph&APPID=af5907d053ba8eeaee183812ba607a11",
+      "query": "q=cebu%20city,ph&APPID=af5907d053ba8eeaee183812ba607a11",
+      "pathname": "/data/2.5/weather",
+      "path": "/data/2.5/weather?q=cebu%20city,ph&APPID=af5907d053ba8eeaee183812ba607a11",
+      "href": "http://api.openweathermap.org/data/2.5/weather?q=cebu%20city,ph&APPID=af5907d053ba8eeaee183812ba607a11"
+    },
+    "method": "GET",
+    "headers": {
+      "accept": "application/json"
+    }
+  }
+}
